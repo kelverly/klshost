@@ -270,7 +270,7 @@ i{
 .contato-container textarea{
     display: block;
     margin: 0 auto 30px;
-    width: 430px;
+    width: 200px;
     height: 170px;
 }
 .contato-container input[type="submit"]{
