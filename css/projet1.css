@@ -1,0 +1,326 @@
+/*att do css: */
+
+:root{
+    --cor1: #F7F7F2;
+    --cor2: #12263A;
+    --cor3: #3F612D;
+}
+/* Geral */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+body, html{
+    background-color: #000;
+}
+h1,h2, h3{
+    color: #333;
+}
+p{
+    color: #70747a;
+}
+
+
+/* Navbar */
+
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+
+}
+.logo  {
+    height: 60px;
+    margin-left: 10px;
+}
+li {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 11px;
+
+}
+
+.navbar-items a {
+    color: var(--cor1);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.navbar-items a:hover {
+    color: #ee4427;
+}
+.navbar-items .default-btn{
+    background-color: var(--cor1);
+    padding: 15px;
+    border-radius: 5px;
+    transition: 0.6s;
+    color: #333;
+}
+.navbar-items .default-btn:hover{
+    color:#ee4427;
+    background-color: #faf6f6;
+}
+
+/*Main*/
+.main-banner{
+    background-image: url(../img1/kenny-eliason-uq5RMAZdZG4-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 0;
+    width: 85%;
+    height: 120px;
+    margin: 0 auto;
+}
+.main-banner h1, p{
+    color: var(--cor1);
+    text-align: center;
+    font-weight: bold;
+}
+.main-banner h1{
+    font-size: 55px;
+}
+span{
+    color: #ee4427;
+}
+.main-banner p{
+    font-size: 35px;
+}
+i{
+    color: var(--cor1);
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+.servico-container{
+    padding: 5rem 0 ;
+    margin-top: 50px;
+
+}
+.servico-container ul {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+.servico-container li{
+    flex: 1 1 200px;
+    list-style: none;
+    text-align: center;
+    padding: 20PX;
+}
+.servico-container h3{
+    color: #ee4427;
+    margin-bottom: 25px;
+}
+.servico-container p{
+    line-height: 25px;
+}
+
+/* Preços e planos*/
+
+.precos-container{
+    padding: 5rem;
+    text-align: center;
+    
+}
+.precos-container h2{
+    font-size: 36px;
+    color: #ee4427;
+}
+.precos-container p {
+    font-size: 20px;
+    color: var(--cor1);
+}
+.planos-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.plano{
+    flex: 0 1 290px;
+    width: 290px;
+    background-color: #e8e9ea;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 15px;
+    transition: 0.6s; 
+    margin: 50px;   
+}
+
+.plano:hover{
+    background-color: #6da84d;
+}
+.plano ul {
+    padding: 0;
+}
+.plano li{
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.plano .preco{
+    width: 100%;
+    height: 120px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #ee4427;
+    color: var(--cor1);
+    text-align: center;
+    line-height: 120px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+.plano .plano-nome{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--cor2);
+    
+}
+.plano .plano-btn{
+    display: block;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 24px;
+    height: 75px;
+    line-height: 75px;
+    color: #000000;
+    transition: 0.5s;
+}
+.plano .plano-btn:hover{
+    color: #ee4427;
+}
+
+/*dominio pesquisa*/
+
+.dominio-container{
+    background-color:#ee4427 ;
+    text-align: center;
+    padding: 5rem 0;
+}
+.dominio-container h2{
+    color: var(--cor1);
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+.dominio-container p {
+    color: #dbdbdb;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.dominio-container input{
+    display: block;
+    border: none;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.dominio-container input[type="text"]{
+    width: 60%;
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.dominio-container input[type="submit"]{
+    background-color: var(--cor1);
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 24px;
+    opacity: 0.8;
+}
+.dominio-container input[type="submit"]:hover{
+    opacity: 1;
+}
+
+
+/*Contato*/
+.contato-container{
+    text-align: center;
+    padding: 5rem 0 2rem 0;
+}
+.contato-container h2{
+    font-size: 36px;
+    color:#ee4427 ;
+    margin-bottom: 15px;
+}
+.contato-container p{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.contato-container input, .contato-container textarea{
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ee4427;
+    margin: 0 10px 20px;
+}
+.contato-container textarea{
+    display: block;
+    margin: 0 auto 30px;
+    width: 430px;
+    height: 170px;
+}
+.contato-container input[type="submit"]{
+    margin: 0 auto;
+    background-color: var(--cor1);
+    font-size: 18px;
+    font-weight: bold;
+    color: #ee4427;
+    cursor: pointer;
+}
+
+/*footer*/
+
+footer{
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0 100px;
+}
+
+/*respon*/
+
+@media (min-width: 750px){
+    .servico-container ul{
+        flex-direction: row;
+    }
+    .planos-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contato-container textarea{
+        
+        width: 470px;
+      
+    }
+    .logo  {
+        height: 100px;
+        margin-left: 10px;
+    }
+    li {
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 15px;
+    }
+    
+    
+}
+@media (min-width: 1520px){
+    .planos-container{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+}
